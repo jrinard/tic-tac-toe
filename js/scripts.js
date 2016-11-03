@@ -37,3 +37,56 @@ function checkFilled(arrayOfSpaces, symbol, outputArray) {
     }
   });
 };
+
+
+
+function checkWin(arrayToCheck) {
+debugger
+	var checking;
+  var checkAgainst =
+	var lastChecked = arrayToCheck[arrayToCheck.length - 1];
+  var lastDifferenceX = 0;
+  var lastDifferenceY = 0;
+
+	for(var i = 0; i < arrayToCheck.length; i += 1) {
+
+
+    checking = arrayToCheck[i];
+
+    if (checking.isAdjacentTo(lastChecked)) {
+    	console.log(checking + " matches " + lastChecked);
+      differenceX = Math.abs(lastChecked.x - checking.x)
+      differenceY = Math.abs(lastChecked.y - checking.y)
+
+			if (differenceX === lastDifferenceX && differenceY === lastDifferenceY) {
+      	alert('Win!!');
+      } else {
+      lastDifferenceX = differenceX;
+      lastDifferenceY = differenceY;
+      lastChecked = checking;
+      arrayToCheck.push(arrayToCheck.shift());
+    	}
+    } else {
+    	console.log(checking + " doesn't match " + lastChecked);
+    }
+
+
+  };
+
+};
+
+
+pass over 1st item and store in variable
+
+check 2nd item against first item, if match remember relationship and check following items agaisnt 2nd item for same relation
+
+else check 2nd item against third item and ^^
+
+else check 3rd and fourth ^^
+
+if 3 in a row found, break and win!
+
+else continue
+
+
+newTest = [space1, space2, space5, space7, space9]
