@@ -1,0 +1,32 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 5%;
+}
+
+h1 {
+  text-align:center;
+}
+
+.space{
+  width: 200px;
+  height: 200px;
+  border: solid 2.5px #444;
+}
+
+
+#board {
+  width: 600px;
+  height: 600px;
+  background-color: #e5e5e5;
+  border:solid 2.5px #444;
+  margin:auto;
+}
+
+#space1 {
+}
+
+#space2 {
+}
