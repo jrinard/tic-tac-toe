@@ -16,6 +16,18 @@ h1 {
   border: solid 2.5px #444;
 }
 
+.col-md-4 {
+
+}
+
+#big-board {
+  margin: 20px;
+  width: 640px;
+  height: 640px;
+  background-color: #444;
+  border: solid thick #ededed;
+
+}
 
 #board {
   width: 600px;
@@ -26,6 +38,7 @@ h1 {
 }
 
 #space1 {
+
 }
 
 #space2 {
